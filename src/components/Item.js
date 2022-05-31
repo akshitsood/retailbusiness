@@ -7,6 +7,7 @@ function Item({ item }) {
   const dispatch = useDispatch()
   function addToCart() 
   {
+    alert("Item added to card!")
   dispatch({type:'addToCart', payload:{...item,quantity:1}})
   
   }
